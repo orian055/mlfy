@@ -42,6 +42,12 @@ Thumbs.db
 .env.local
 .env.*.local
 
+# Vercel
+.vercel
+dist/
+.next
+out/
+
 # IDE
 .idea/
 .code-workspace
