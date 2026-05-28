@@ -6,12 +6,6 @@
     "ASPNETCORE_ENVIRONMENT": "Production",
     "ASPNETCORE_URLS": "http://0.0.0.0:3000"
   },
-  "functions": {
-    "api/**": {
-      "memory": 1024,
-      "maxDuration": 30
-    }
-  },
   "rewrites": [
     {
       "source": "/(.*)",
