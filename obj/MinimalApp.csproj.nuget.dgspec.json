@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\orian\\Desktop\\Blazor1\\MinimalApp\\MinimalApp.csproj": {}
+    "C:\\Users\\orian\\Desktop\\mlfy\\myloveforyas\\MinimalApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\orian\\Desktop\\Blazor1\\MinimalApp\\MinimalApp.csproj": {
+    "C:\\Users\\orian\\Desktop\\mlfy\\myloveforyas\\MinimalApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\orian\\Desktop\\Blazor1\\MinimalApp\\MinimalApp.csproj",
+        "projectUniqueName": "C:\\Users\\orian\\Desktop\\mlfy\\myloveforyas\\MinimalApp.csproj",
         "projectName": "MinimalApp",
-        "projectPath": "C:\\Users\\orian\\Desktop\\Blazor1\\MinimalApp\\MinimalApp.csproj",
+        "projectPath": "C:\\Users\\orian\\Desktop\\mlfy\\myloveforyas\\MinimalApp.csproj",
         "packagesPath": "C:\\Users\\orian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\orian\\Desktop\\Blazor1\\MinimalApp\\obj\\",
+        "outputPath": "C:\\Users\\orian\\Desktop\\mlfy\\myloveforyas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

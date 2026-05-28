@@ -53,7 +53,7 @@ app.MapGet("/Yas", () =>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, maximum-scale=1">
-        <meta name="theme-color" content="#e8406a">
+        <meta name="theme-color" content="#0f1b2e">
         <meta name="description" content="A beautiful love website built with care">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -67,32 +67,32 @@ app.MapGet("/Yas", () =>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
         <style>
             :root {
-                --rose: #e8406a; --rose-light: #ff7096; --rose-dark: #9e1a3a;
-                --gold: #d4a843; --gold-light: #f0c96a;
-                --cream: #fff5f7; --deep: #1a0610; --wine: #4a0e20; --soft-pink: #f9c4d4;
+                --rose: #d4869e; --rose-light: #e5a5b8; --rose-dark: #a83170;
+                --gold: #d4a94f; --gold-light: #e5c178;
+                --cream: #f5f0eb; --deep: #0f1b2e; --wine: #1a2844; --soft-pink: #2a3d54;
             }
             * { box-sizing: border-box; margin: 0; padding: 0; }
             body {
                 min-height: 100vh;
                 font-family: 'Cormorant Garamond', serif;
-                background: var(--deep);
+                background: linear-gradient(135deg, #0a1520 0%, #141e2a 100%);
                 overflow-x: hidden;
             }
             .bg-canvas {
                 position: fixed; inset: 0;
                 background:
-                    radial-gradient(ellipse at 10% 20%, rgba(158,26,58,0.35) 0%, transparent 50%),
-                    radial-gradient(ellipse at 90% 80%, rgba(74,14,32,0.5) 0%, transparent 45%),
-                    linear-gradient(160deg, #1a0610 0%, #2d0a1a 40%, #1a0610 100%);
+                    radial-gradient(ellipse at 10% 20%, rgba(212,134,158,0.1) 0%, transparent 50%),
+                    radial-gradient(ellipse at 90% 80%, rgba(42,61,84,0.3) 0%, transparent 45%),
+                    linear-gradient(160deg, #0a1520 0%, #141e2a 40%, #0a1520 100%);
                 z-index: 0;
             }
             .petal {
                 position: fixed; pointer-events: none;
-                animation: petalFall linear infinite; z-index: 1; opacity: 0.55;
+                animation: petalFall linear infinite; z-index: 1; opacity: 0.2;
             }
             @keyframes petalFall {
-                0%   { transform: translateY(-60px) rotate(0deg); opacity: 0.6; }
-                50%  { transform: translateY(50vh) rotate(180deg) translateX(30px); opacity: 0.4; }
+                0%   { transform: translateY(-60px) rotate(0deg); opacity: 0.25; }
+                50%  { transform: translateY(50vh) rotate(180deg) translateX(30px); opacity: 0.15; }
                 100% { transform: translateY(110vh) rotate(360deg) translateX(-15px); opacity: 0; }
             }
 
@@ -101,68 +101,73 @@ app.MapGet("/Yas", () =>
 
             /* ── SIDEBAR ── */
             .sidebar {
-                width: 280px; flex-shrink: 0;
+                width: 140px; flex-shrink: 0;
                 display: flex; flex-direction: column;
-                padding: 36px 24px;
+                padding: 36px 16px;
                 padding-top: max(36px, env(safe-area-inset-top));
-                padding-left: max(24px, env(safe-area-inset-left));
-                padding-right: max(24px, env(safe-area-inset-right));
-                background: linear-gradient(180deg, rgba(26,6,16,0.96) 0%, rgba(74,14,32,0.88) 100%);
-                border-right: 1px solid rgba(212,168,67,0.18);
-                backdrop-filter: blur(20px);
+                padding-left: max(16px, env(safe-area-inset-left));
+                padding-right: max(16px, env(safe-area-inset-right));
+                background: linear-gradient(180deg, rgba(26,40,68,0.9) 0%, rgba(20,30,42,0.85) 100%);
+                border-right: 2px solid rgba(201,64,142,0.12);
+                backdrop-filter: blur(8px);
                 position: sticky; top: 0; height: 100vh; overflow-y: auto;
             }
-            .logo-wrap { display: flex; flex-direction: column; align-items: center; margin-bottom: 24px; }
+            .logo-wrap { display: flex; flex-direction: column; align-items: center; margin-bottom: 16px; justify-content: flex-start; }
             .logo-frame {
-                width: 86px; height: 86px; border-radius: 50%;
-                border: 2px solid rgba(212,168,67,0.5); padding: 3px;
-                box-shadow: 0 0 24px rgba(212,168,67,0.1), 0 8px 32px rgba(0,0,0,0.4);
+                width: 72px; height: 72px; border-radius: 50%;
+                border: 3px solid #d4869e; padding: 3px;
+                box-shadow: 0 4px 16px rgba(201,64,142,0.15);
+                cursor: pointer;
             }
             .logo-frame img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
             .logo-name {
-                font-family: 'Dancing Script', cursive; font-size: 1.4rem;
-                color: var(--gold-light); margin-top: 10px; letter-spacing: 0.05em;
-                text-shadow: 0 0 16px rgba(212,168,67,0.4); text-align: center;
+                font-family: 'Dancing Script', cursive; font-size: 1rem;
+                color: #d4869e; margin-top: 8px; letter-spacing: 0.05em;
+                text-shadow: none; text-align: center;
             }
             .divider {
-                width: 55%; height: 1px;
-                background: linear-gradient(90deg, transparent, rgba(212,168,67,0.4), transparent);
+                width: 55%; height: 2px;
+                background: linear-gradient(90deg, transparent, #d4869e, transparent);
                 margin: 4px auto 20px;
+                display: none;
             }
             .nav-label {
                 font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
-                color: rgba(212,168,67,0.5); margin-bottom: 10px; text-align: center;
+                color: #d4869e; opacity: 0.7; margin-bottom: 10px; text-align: center;
+                display: none;
             }
-            .nav-grid { display: flex; flex-direction: column; gap: 8px; }
+            .nav-grid { 
+                display: none;
+            }
             .nav-btn {
                 width: 100%; padding: 13px 18px;
-                border-radius: 3px; border: 1px solid rgba(212,168,67,0.13);
-                background: rgba(255,255,255,0.03); color: var(--soft-pink);
+                border-radius: 8px; border: 2px solid #2a3d54;
+                background: rgba(42,61,84,0.4); color: #e5c178;
                 font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-style: italic;
                 cursor: pointer; transition: all 0.3s ease; text-align: left; letter-spacing: 0.02em;
                 position: relative; overflow: hidden;
             }
             .nav-btn::before {
                 content: ''; position: absolute; left: 0; top: 0; bottom: 0;
-                width: 2px; background: linear-gradient(180deg, var(--gold), var(--rose));
+                width: 3px; background: linear-gradient(180deg, #d4869e, #d4a94f);
                 transform: scaleY(0); transition: transform 0.3s ease;
             }
-            .nav-btn:hover { border-color: rgba(212,168,67,0.35); color: var(--cream); padding-left: 22px; }
+            .nav-btn:hover { border-color: #d4869e; color: #d4869e; padding-left: 22px; background: rgba(212,134,158,0.1); }
             .nav-btn:hover::before { transform: scaleY(1); }
 
             /* daily note in sidebar */
             .daily-note {
-                margin-top: auto; padding: 14px 16px;
-                border: 1px solid rgba(212,168,67,0.12); border-radius: 3px;
-                background: rgba(255,255,255,0.02);
+                margin-top: auto; padding: 10px 12px;
+                border: 2px solid #2a3d54; border-radius: 8px;
+                background: rgba(42,61,84,0.3);
             }
             .daily-note-label {
-                font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase;
-                color: rgba(212,168,67,0.45); margin-bottom: 8px; display: block;
+                font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase;
+                color: #d4869e; opacity: 0.7; margin-bottom: 6px; display: block;
             }
             .daily-note-text {
-                font-family: 'Dancing Script', cursive; font-size: 1rem;
-                color: rgba(249,196,212,0.8); line-height: 1.5;
+                font-family: 'Dancing Script', cursive; font-size: 0.85rem;
+                color: #d4869e; line-height: 1.4;
             }
 
             /* ── MAIN ── */
@@ -174,39 +179,39 @@ app.MapGet("/Yas", () =>
                 padding-left: max(64px, env(safe-area-inset-left));
                 min-height: 100vh;
             }
-            .hero { max-width: 680px; width: 100%; }
+            .hero { max-width: 600px; width: 100%; }
             .hero-eyebrow {
                 font-family: 'Dancing Script', cursive; font-size: 1.35rem;
-                color: var(--gold-light); letter-spacing: 0.08em; margin-bottom: 14px;
+                color: #d4869e; letter-spacing: 0.08em; margin-bottom: 14px;
                 opacity: 0; animation: slideUp 0.8s ease 0.2s forwards;
             }
             .hero-title {
                 font-family: 'Playfair Display', serif;
                 font-size: clamp(3rem, 5.5vw, 6rem); font-weight: 900;
-                line-height: 1; letter-spacing: -0.02em; color: var(--cream);
+                line-height: 1; letter-spacing: -0.02em; color: #f5f0eb;
                 opacity: 0; animation: slideUp 0.9s ease 0.4s forwards;
             }
             .hero-title em {
-                font-style: italic; color: var(--rose-light); display: block;
+                font-style: italic; color: #d4869e; display: block;
                 font-size: 0.62em; font-weight: 400; letter-spacing: 0.04em;
-                text-shadow: 0 0 40px rgba(255,112,150,0.45);
+                text-shadow: none;
             }
             .title-underline {
                 width: 0; height: 2px;
-                background: linear-gradient(90deg, var(--rose), var(--gold));
+                background: linear-gradient(90deg, #d4869e, #d4a94f);
                 margin-bottom: 28px; animation: expandLine 1s ease 1s forwards; border-radius: 2px;
             }
             @keyframes expandLine { to { width: 180px; } }
             .hero-body {
-                font-size: 1.2rem; line-height: 1.9; color: rgba(255,220,230,0.85);
+                font-size: 1.2rem; line-height: 1.9; color: #d4c5ba;
                 font-weight: 300; max-width: 520px;
                 opacity: 0; animation: slideUp 0.9s ease 0.7s forwards;
             }
-            .hero-body strong { color: var(--soft-pink); font-weight: 600; }
+            .hero-body strong { color: #d4869e; font-weight: 600; }
             .badge {
                 display: inline-flex; align-items: center; gap: 8px; margin-top: 26px;
-                padding: 10px 18px; border: 1px solid rgba(212,168,67,0.28); border-radius: 2px;
-                background: rgba(212,168,67,0.05); color: var(--gold-light);
+                padding: 10px 18px; border: 2px solid #d4869e; border-radius: 8px;
+                background: rgba(212,134,158,0.1); color: #d4869e;
                 font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase;
                 opacity: 0; animation: slideUp 0.9s ease 1s forwards;
             }
@@ -225,17 +230,15 @@ app.MapGet("/Yas", () =>
                 .layout { flex-direction: column; }
                 .sidebar {
                     width: 100%; height: auto; position: relative;
-                    border-right: none; border-bottom: 1px solid rgba(212,168,67,0.18);
+                    border-right: none; border-bottom: 2px solid rgba(212,134,158,0.12);
                     padding: max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 14px max(16px, env(safe-area-inset-left));
                 }
                 .logo-wrap { flex-direction: row; gap: 12px; margin-bottom: 12px; align-items: center; }
                 .logo-frame { width: 52px; height: 52px; flex-shrink: 0; }
-                .logo-name { margin-top: 0; font-size: 1.2rem; text-align: left; }
+                .logo-name { margin-top: 0; font-size: 1rem; text-align: left; }
                 .divider { display: none; }
                 .nav-label { display: none; }
-                .nav-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-                .nav-btn { margin-bottom: 0; font-size: 0.88rem; padding: 10px 12px; text-align: center; }
-                .nav-btn:hover { padding-left: 12px; }
+                .nav-grid { display: none; }
                 .daily-note { display: none; }
                 .main {
                     padding: 28px max(18px, env(safe-area-inset-right)) max(48px, env(safe-area-inset-bottom)) max(18px, env(safe-area-inset-left));
@@ -259,16 +262,11 @@ app.MapGet("/Yas", () =>
                     <div class="logo-frame logo-click" id="logo-click">
                         <img src="/yasmin-Photoroom.png" alt="Yasmin">
                     </div>
-                    <div class="logo-name">Yasmin + Orian omgg</div>
+                    <div class="logo-name">Yasmin</div>
                 </div>
                 <div class="divider"></div>
                 <div class="nav-label">Chickenron</div>
-                <div class="nav-grid">
-                    <button class="nav-btn" onclick="location.href='/reasons'">&#10022; Reasons I Love You</button>
-                    <button class="nav-btn" onclick="location.href='/relationship'">&#9825; Our Time Together</button>
-                    <button class="nav-btn" onclick="location.href='/fun'">&#10023; Just For Fun</button>
-                    <button class="nav-btn" onclick="location.href='/more'">&#10087; I Love You More!</button>
-                </div>
+                <div class="nav-grid"></div>
                 <div class="daily-note">
                     <span class="daily-note-label">&#10022; today's note</span>
                     <div class="daily-note-text" id="dailyNote">loading...</div>
@@ -284,11 +282,9 @@ app.MapGet("/Yas", () =>
                     </h1>
                     <div class="title-underline"></div>
                     <p class="hero-body">
-                        I built this <strong>entire world</strong> just for you.<br>
-                        Every pixel placed with love.<br>
-                        Every line written thinking of you.
+                        This world was built with love, for you. Every detail placed with care.
                     </p>
-                    <div class="badge">&#10022; &nbsp; Made with love by Orian &nbsp; &#10022;</div>
+                    <div class="badge" onclick="location.href='/relationship'" style="cursor: pointer;">&#10022; &nbsp; Enter Our Love Story &nbsp; &#10022;</div>
                 </div>
             </main>
         </div>
@@ -353,7 +349,7 @@ app.MapGet("/Yas", () =>
             // Petals
             const pc = document.getElementById('petals');
             const petalChars = ['\u2665','\u2661','\u2764','\u273F'];
-            const petalColors = ['#e8406a','#d4a843','#ff7096','#f0c96a'];
+            const petalColors = ['#d4869e','#d4a94f','#e5a5b8','#e5c178'];
             function spawnPetal() {
                 const p = document.createElement('div');
                 p.className = 'petal';
@@ -375,14 +371,7 @@ app.MapGet("/Yas", () =>
 });
 
 // ========== PAGE ROUTES ==========
-app.MapReasonsPage();
 app.MapRelationshipPage();
-app.MapMorePage();
-app.MapNguPage();
-app.MapBlehhPage();
-app.MapHelloPage();
-app.MapNoIlymPage();
-app.MapFun();
 
 // Run on port from environment or default (Railway uses PORT)
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
