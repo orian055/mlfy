@@ -1,4 +1,4 @@
-public static class HelloPage
+﻿public static class HelloPage
 {
     public static void MapHelloPage(this WebApplication app)
     {
@@ -12,14 +12,14 @@ public static class HelloPage
                 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
                 <style>
                     :root {
-                        --rose: #e8406a; --rose-light: #ff7096;
+                        --rose: #ffffff; --rose-light: #ffffff;
                         --gold: #d4a843; --gold-light: #f0c96a;
-                        --cream: #fff5f7; --deep: #1a0610; --soft-pink: #f9c4d4;
+                        --cream: #fff5f7; --deep: #1a0610; --soft-pink: #ffffff;
                     }
                     * { box-sizing: border-box; margin: 0; padding: 0; }
                     body {
                         min-height: 100vh;
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         background:
                             radial-gradient(ellipse at 15% 25%, rgba(158,26,58,0.28) 0%, transparent 50%),
                             radial-gradient(ellipse at 85% 75%, rgba(74,14,32,0.35) 0%, transparent 45%),
@@ -55,13 +55,13 @@ public static class HelloPage
                     @keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
 
                     .eyebrow {
-                        font-family: 'Dancing Script', cursive;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: 1.3rem; color: var(--gold-light);
                         margin-bottom: 16px;
                         opacity: 0; animation: slideUp 0.6s ease 0.2s forwards;
                     }
                     h1 {
-                        font-family: 'Playfair Display', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: clamp(3rem, 8vw, 5.5rem);
                         font-weight: 900; font-style: italic;
                         color: var(--cream); letter-spacing: -0.03em;
@@ -91,7 +91,7 @@ public static class HelloPage
                         font-weight: 300;
                     }
                     .love-line strong {
-                        font-family: 'Playfair Display', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-style: italic;
                         color: var(--rose-light);
                         font-weight: 400;
@@ -120,7 +120,7 @@ public static class HelloPage
                         margin-top: 28px; padding: 14px 36px;
                         border-radius: 2px; border: 1px solid rgba(212,168,67,0.3);
                         background: transparent; color: var(--gold-light);
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: 1rem; font-style: italic; letter-spacing: 0.1em;
                         cursor: pointer; transition: all 0.3s ease;
                         opacity: 0; animation: slideUp 0.7s ease 1.1s forwards;
@@ -145,27 +145,27 @@ public static class HelloPage
             <body>
                 <div id="petals"></div>
                 <div class="card">
-                    <div class="eyebrow">— a whole website, just for you —</div>
+                    <div class="eyebrow">ג€” a whole website, just for you ג€”</div>
                     <h1>Helloww</h1>
                     <div class="gold-line"></div>
                     <div class="love-lines">
                         <p class="love-line">I made a whole website</p>
                         <p class="love-line">just to say <strong>I love you.</strong></p>
                         <p class="love-line">btw you're pretty cute.</p>
-                        <p class="love-line"><strong>I LOVE YOUUU ♡</strong></p>
+                        <p class="love-line"><strong>I LOVE YOUUU ג™¡</strong></p>
                     </div>
                     <div class="hearts-row">
-                        <span class="heart">♥</span>
-                        <span class="heart">♡</span>
-                        <span class="heart">♥</span>
-                        <span class="heart">♡</span>
-                        <span class="heart">♥</span>
+                        <span class="heart">ג™¥</span>
+                        <span class="heart">ג™¡</span>
+                        <span class="heart">ג™¥</span>
+                        <span class="heart">ג™¡</span>
+                        <span class="heart">ג™¥</span>
                     </div>
-                    <button class="back-btn" onclick="location.href='/Yas'">← return home</button>
+                    <button class="back-btn" onclick="location.href='/Yas'">ג† return home</button>
                 </div>
                 <script>
                     const pc = document.getElementById('petals');
-                    const ps = ['🌸','❤️','🌹'];
+                    const ps = ['נ¸','ג₪ן¸','נ¹'];
                     function sp() {
                         const p = document.createElement('div'); p.className = 'petal';
                         p.textContent = ps[Math.floor(Math.random() * ps.length)];

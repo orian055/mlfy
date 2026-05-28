@@ -1,4 +1,4 @@
-public static class FunEndpoints
+﻿public static class FunEndpoints
 {
     public static void MapFun(this WebApplication app)
     {

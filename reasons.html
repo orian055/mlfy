@@ -1,8 +1,8 @@
-<html>
+﻿<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, maximum-scale=1">
-    <meta name="theme-color" content="#e8406a">
+    <meta name="theme-color" content="#ffffff">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Love Portal">
@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --rose: #e8406a; --rose-light: #ff7096;
+            --rose: #ffffff; --rose-light: #ffffff;
             --gold: #d4a843; --gold-light: #f0c96a;
-            --cream: #fff5f7; --deep: #1a0610; --soft-pink: #f9c4d4;
+            --cream: #fff5f7; --deep: #1a0610; --soft-pink: #ffffff;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             min-height: 100vh; min-height: 100dvh;
-            font-family: 'Cormorant Garamond', serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background:
                 radial-gradient(ellipse at 15% 25%, rgba(158,26,58,0.28) 0%, transparent 50%),
                 radial-gradient(ellipse at 85% 75%, rgba(74,14,32,0.35) 0%, transparent 45%),
@@ -57,12 +57,12 @@
         @keyframes shimmer { from { background-position:200% 0; } to { background-position:-200% 0; } }
 
         .eyebrow {
-            font-family: 'Dancing Script', cursive; font-size: 1.2rem;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 1.2rem;
             color: var(--gold-light); letter-spacing: 0.08em; margin-bottom: 8px;
             opacity: 0; animation: slideUp 0.7s ease 0.2s forwards;
         }
         h1 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 700;
             color: var(--cream); letter-spacing: -0.02em; line-height: 1.05;
             opacity: 0; animation: slideUp 0.7s ease 0.35s forwards;
@@ -80,7 +80,7 @@
             opacity: 0; animation: slideUp 0.7s ease 0.5s forwards;
         }
 
-        /* Reason stage — swipeable */
+        /* Reason stage ג€” swipeable */
         .reason-stage {
             position: relative; margin: 0 auto 16px;
             min-height: 120px;
@@ -95,11 +95,11 @@
         .reason-stage::before {
             content: '\201C';
             position: absolute; top: -8px; left: 14px;
-            font-family: 'Playfair Display', serif; font-size: 5rem;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 5rem;
             color: rgba(212,168,67,0.08); line-height: 1; pointer-events: none;
         }
         .reason-text {
-            font-family: 'Playfair Display', serif; font-style: italic;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-style: italic;
             font-size: clamp(1rem, 3.5vw, 1.2rem); color: var(--soft-pink);
             line-height: 1.7; position: relative; z-index: 1;
             transition: opacity 0.2s ease, transform 0.2s ease;
@@ -155,7 +155,7 @@
         .back-btn {
             margin-top: 22px; padding: 12px 32px; border-radius: 2px;
             border: 1px solid rgba(212,168,67,0.3); background: transparent;
-            color: var(--gold-light); font-family: 'Cormorant Garamond', serif;
+            color: var(--gold-light); font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             font-size: 0.95rem; font-style: italic; letter-spacing: 0.1em;
             cursor: pointer; transition: all 0.3s ease;
             opacity: 0; animation: slideUp 0.7s ease 1s forwards;
@@ -339,7 +339,7 @@
         // petals
         const pc = document.getElementById('petals');
         const ps = ['\u2665','\u2661','\u2764','\u273F'];
-        const pc_colors = ['#e8406a','#d4a843','#ff7096'];
+        const pc_colors = ['#ffffff','#d4a843','#ffffff'];
         function sp() {
             const p = document.createElement('div'); p.className = 'petal';
             p.textContent = ps[Math.floor(Math.random()*ps.length)];

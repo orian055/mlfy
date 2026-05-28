@@ -1,4 +1,4 @@
-public static class BlehhPage
+﻿public static class BlehhPage
 {
     public static void MapBlehhPage(this WebApplication app)
     {
@@ -12,14 +12,14 @@ public static class BlehhPage
                 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
                 <style>
                     :root {
-                        --rose: #e8406a; --rose-light: #ff7096;
+                        --rose: #ffffff; --rose-light: #ffffff;
                         --gold: #d4a843; --gold-light: #f0c96a;
-                        --cream: #fff5f7; --deep: #1a0610; --soft-pink: #f9c4d4;
+                        --cream: #fff5f7; --deep: #1a0610; --soft-pink: #ffffff;
                     }
                     * { box-sizing: border-box; margin: 0; padding: 0; }
                     body {
                         min-height: 100vh;
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         background:
                             radial-gradient(ellipse at 15% 25%, rgba(158,26,58,0.28) 0%, transparent 50%),
                             radial-gradient(ellipse at 85% 75%, rgba(74,14,32,0.35) 0%, transparent 45%),
@@ -55,7 +55,7 @@ public static class BlehhPage
                     @keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
 
                     .eyebrow {
-                        font-family: 'Dancing Script', cursive;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: 1.3rem; color: var(--gold-light); margin-bottom: 12px;
                         opacity: 0; animation: slideUp 0.6s ease 0.2s forwards;
                     }
@@ -76,7 +76,7 @@ public static class BlehhPage
                     .rumbling { animation: rumble 0.5s ease !important; }
 
                     .blehhh-btn {
-                        font-family: 'Playfair Display', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: clamp(3rem, 8vw, 5rem);
                         font-style: italic; font-weight: 900;
                         padding: 24px 60px;
@@ -108,7 +108,7 @@ public static class BlehhPage
                         padding: 12px 32px; border-radius: 2px;
                         border: 1px solid rgba(212,168,67,0.2);
                         background: transparent; color: rgba(212,168,67,0.6);
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: 0.95rem; font-style: italic; letter-spacing: 0.1em;
                         cursor: pointer; transition: all 0.3s ease;
                         opacity: 0; animation: slideUp 0.6s ease 0.8s forwards;
@@ -132,11 +132,11 @@ public static class BlehhPage
             <body>
                 <div id="petals"></div>
                 <div class="card" id="main-card">
-                    <div class="eyebrow">— BLEHHHHH —</div>
+                    <div class="eyebrow">ג€” BLEHHHHH ג€”</div>
                     <br>
                     <button class="blehhh-btn" id="blehhh-btn">blehhh</button>
                     <br>
-                    <button class="back-btn" onclick="location.href='/Yas'">← return home</button>
+                    <button class="back-btn" onclick="location.href='/Yas'">ג† return home</button>
                 </div>
                 <script>
                     const btn = document.getElementById('blehhh-btn');
@@ -151,7 +151,7 @@ public static class BlehhPage
                     });
 
                     const pc = document.getElementById('petals');
-                    const ps = ['🌸','❤️'];
+                    const ps = ['נ¸','ג₪ן¸'];
                     function sp() {
                         const p = document.createElement('div'); p.className = 'petal';
                         p.textContent = ps[Math.floor(Math.random() * ps.length)];

@@ -1,4 +1,4 @@
-public static class NoIlymPage
+﻿public static class NoIlymPage
 {
     public static void MapNoIlymPage(this WebApplication app)
     {
@@ -12,14 +12,14 @@ public static class NoIlymPage
                 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
                 <style>
                     :root {
-                        --rose: #e8406a; --rose-light: #ff7096;
+                        --rose: #ffffff; --rose-light: #ffffff;
                         --gold: #d4a843; --gold-light: #f0c96a;
-                        --cream: #fff5f7; --deep: #1a0610; --soft-pink: #f9c4d4;
+                        --cream: #fff5f7; --deep: #1a0610; --soft-pink: #ffffff;
                     }
                     * { box-sizing: border-box; margin: 0; padding: 0; }
                     body {
                         min-height: 100vh;
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         background:
                             radial-gradient(ellipse at 15% 25%, rgba(158,26,58,0.28) 0%, transparent 50%),
                             radial-gradient(ellipse at 85% 75%, rgba(74,14,32,0.35) 0%, transparent 45%),
@@ -55,12 +55,12 @@ public static class NoIlymPage
                     @keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
 
                     .eyebrow {
-                        font-family: 'Dancing Script', cursive;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: 1.3rem; color: var(--gold-light); margin-bottom: 12px;
                         opacity: 0; animation: slideUp 0.6s ease 0.2s forwards;
                     }
                     h1 {
-                        font-family: 'Playfair Display', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: clamp(2.4rem, 6vw, 3.8rem); font-weight: 700;
                         color: var(--cream); letter-spacing: -0.02em;
                         opacity: 0; animation: slideUp 0.6s ease 0.35s forwards;
@@ -84,7 +84,7 @@ public static class NoIlymPage
                         border: 1px solid rgba(212,168,67,0.25);
                         background: rgba(255,255,255,0.025);
                         color: var(--soft-pink);
-                        font-family: 'Playfair Display', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: 1.2rem; font-style: italic;
                         cursor: pointer; transition: all 0.3s ease;
                         position: relative; overflow: hidden;
@@ -122,17 +122,17 @@ public static class NoIlymPage
             <body>
                 <div id="petals"></div>
                 <div class="card">
-                    <div class="eyebrow">— settle this once and for all —</div>
+                    <div class="eyebrow">ג€” settle this once and for all ג€”</div>
                     <h1>Who loves <em>more?</em></h1>
                     <div class="gold-line"></div>
                     <div class="btn-group">
-                        <button class="choice-btn" onclick="location.href='/Yas'">Orian ♡</button>
+                        <button class="choice-btn" onclick="location.href='/Yas'">Orian ג™¡</button>
                         <button class="choice-btn disabled" title="not an option">Yasmin</button>
                     </div>
                 </div>
                 <script>
                     const pc = document.getElementById('petals');
-                    const ps = ['🌸','❤️'];
+                    const ps = ['נ¸','ג₪ן¸'];
                     function sp() {
                         const p = document.createElement('div'); p.className = 'petal';
                         p.textContent = ps[Math.floor(Math.random() * ps.length)];

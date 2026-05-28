@@ -1,4 +1,4 @@
-public static class MorePage
+﻿public static class MorePage
 {
     public static void MapMorePage(this WebApplication app)
     {
@@ -9,7 +9,7 @@ public static class MorePage
             <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, maximum-scale=1">
-            <meta name="theme-color" content="#e8406a">
+            <meta name="theme-color" content="#ffffff">
             <meta name="apple-mobile-web-app-capable" content="yes">
             <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
             <meta name="apple-mobile-web-app-title" content="Love Portal">
@@ -17,14 +17,14 @@ public static class MorePage
                 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
                 <style>
                     :root {
-                        --rose: #e8406a; --rose-light: #ff7096;
+                        --rose: #ffffff; --rose-light: #ffffff;
                         --gold: #d4a843; --gold-light: #f0c96a;
-                        --cream: #fff5f7; --deep: #1a0610; --soft-pink: #f9c4d4;
+                        --cream: #fff5f7; --deep: #1a0610; --soft-pink: #ffffff;
                     }
                     * { box-sizing: border-box; margin: 0; padding: 0; }
                     body {
                         min-height: 100vh;
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         background:
                             radial-gradient(ellipse at 15% 25%, rgba(158,26,58,0.28) 0%, transparent 50%),
                             radial-gradient(ellipse at 85% 75%, rgba(74,14,32,0.35) 0%, transparent 45%),
@@ -64,13 +64,13 @@ public static class MorePage
                     @keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
 
                     .eyebrow {
-                        font-family: 'Dancing Script', cursive;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: 1.3rem; color: var(--gold-light);
                         letter-spacing: 0.08em; margin-bottom: 10px;
                         opacity: 0; animation: slideUp 0.7s ease 0.2s forwards;
                     }
                     h1 {
-                        font-family: 'Playfair Display', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: clamp(2.4rem, 5vw, 3.6rem);
                         font-weight: 700; color: var(--cream);
                         letter-spacing: -0.02em; line-height: 1.1;
@@ -101,7 +101,7 @@ public static class MorePage
                         border: 1px solid rgba(212,168,67,0.15);
                         background: rgba(255,255,255,0.025);
                         color: var(--soft-pink);
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: 1.05rem; font-style: italic;
                         letter-spacing: 0.03em;
                         cursor: pointer;
@@ -133,7 +133,7 @@ public static class MorePage
                         padding: 14px 36px; border-radius: 2px;
                         border: 1px solid rgba(212,168,67,0.3);
                         background: transparent; color: var(--gold-light);
-                        font-family: 'Cormorant Garamond', serif;
+                        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                         font-size: 1rem; font-style: italic; letter-spacing: 0.1em;
                         cursor: pointer; transition: all 0.3s ease;
                         opacity: 0; animation: slideUp 0.7s ease 1s forwards;
@@ -187,7 +187,7 @@ public static class MorePage
                 <div id="petals"></div>
                 <div class="page-wrap">
                     <div class="card">
-                        <div class="eyebrow">— the eternal debate —</div>
+                        <div class="eyebrow">ג€” the eternal debate ג€”</div>
                         <h1>I Love You <em>More!</em></h1>
                         <div class="gold-line"></div>
                         <p class="sub">What do you have to say about that?</p>
@@ -195,16 +195,16 @@ public static class MorePage
                         <div class="btn-grid">
                             <button class="action-btn" onclick="location.href='/noilym'">No, I love YOU more!</button>
                             <button class="action-btn" onclick="location.href='/ngu'">I give up...</button>
-                            <button class="action-btn" onclick="location.href='/blehhh'">Blehhh 😤</button>
-                            <button class="action-btn" onclick="location.href='/hello'">Hello ♡</button>
+                            <button class="action-btn" onclick="location.href='/blehhh'">Blehhh נ˜₪</button>
+                            <button class="action-btn" onclick="location.href='/hello'">Hello ג™¡</button>
                         </div>
 
-                        <button class="back-btn" onclick="location.href='/Yas'">← return home</button>
+                        <button class="back-btn" onclick="location.href='/Yas'">ג† return home</button>
                     </div>
                 </div>
                 <script>
                     const pc = document.getElementById('petals');
-                    const ps = ['🌸','❤️'];
+                    const ps = ['נ¸','ג₪ן¸'];
                     function sp() {
                         const p = document.createElement('div'); p.className = 'petal';
                         p.textContent = ps[Math.floor(Math.random() * ps.length)];
